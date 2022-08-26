@@ -159,6 +159,10 @@ input {
     margin-bottom: 4rem;
 }
 
+.btn-icon {
+    width: 30px;
+}
+
 .btn-content {
     display: none;
     transition: width 2s, height 2s, transform 2s;
@@ -388,6 +392,9 @@ footer p {
     .btn-sm {
         font-size: 1rem;
         padding: .5rem 1rem;
+    }
+    .btn-icon {
+        width: 26px;
     }
 }
 
