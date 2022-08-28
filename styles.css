@@ -55,6 +55,11 @@ input {
     padding: 1rem;
 }
 
+.transform {
+    transform: rotate(45deg);
+    transition: transform 0.1s linear;
+}
+
 .logo {
     width: 140px;
 }
