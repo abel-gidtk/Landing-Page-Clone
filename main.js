@@ -7,7 +7,7 @@ function removeShow() {
 }
 
 function selectItem(e) {
-    var img = document.getElementById(`${this.id}-icon`).src;
+    this.lastElementChild.classList.toggle('transform');
     const btnContentItem = document.querySelector(`#${this.id}-content`);
     btnContentItem.classList.toggle('show');
     const btnItem = document.querySelector(`#${this.id}`);
@@ -16,14 +16,6 @@ function selectItem(e) {
     } else {
         btnItem.style.marginBottom = "1px";
     };
-
-    if (img.indexOf('plus-sign.svg')!=-1) {
-        document.getElementById(`${this.id}-icon`).src  = './images/xmark.svg';
-    }
-     else {
-       document.getElementById(`${this.id}-icon`).src = './images/plus-sign.svg';
-   };
-   
 }
 
 btn.forEach(button => {
